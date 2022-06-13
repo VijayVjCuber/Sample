@@ -1,107 +1,21 @@
-/* CSS Reset */
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-body {
-    line-height:1;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
 /* ----------------------------------------------------------------------------- */
 
 /* Application Changes */
 #lefthalf{
-    background-image: linear-gradient(#37445B,#19202C);
+    height: 800px;
     width: 490px;
-    height: 100vh;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    
+
+    position: absolute;
+    left: 0%;
+    right: 65%;
+    top: 0%;
+    bottom: 0%;
+
+    background: linear-gradient(225.63deg, #37445B -17.16%, #19202C 79.72%);
 }
 
 #heading{
@@ -123,3 +37,494 @@ input, select {
     color: #FFFFFF;
 }
 
+#product-img{
+    height: 535px;
+    width: 622.9999389648438px;
+    left: 115px;
+    top: 124px;
+    border-radius: 0px;
+
+    position: absolute;
+    left: 8.21%;
+    right: 47.29%;
+    top: 15.5%;
+    bottom: 17.62%;
+    
+    background: url(./Web/ShoeLarge.png);
+}
+
+#fb-wrap{
+    height: 36px;
+    width: 36px;
+    left: 130px;
+    top: 734px;
+    border-radius: 0px;
+}
+
+#facebook{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 130px;
+    top: 734px;
+
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+
+#tt-wrap{
+    height: 36px;
+    width: 36px;
+    left: 181px;
+    top: 734px;
+    border-radius: 0px;
+}
+
+#twitter{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 181px;
+    top: 734px;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    border-radius: 25px;
+}
+#is-wrap{
+    height: 36px;
+    width: 36px;
+    left: 232px;
+    top: 734px;
+    border-radius: 0px;
+}
+
+#instagram{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 232px;
+    top: 734px;
+    
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+
+
+/* Logos */
+
+#facebook-logo{
+    position: absolute;
+    opacity: 0.5;    
+
+    height: 15.84000015258789px;
+    width: 7.920000076293945px;
+    left: 143.67999267578125px;
+    top: 744.0799865722656px;
+    border-radius: 0px;
+
+}
+
+#twitter-logo{
+    position: absolute;    
+    opacity: 0.5;
+    height: 12.960000038146973px;
+    width: 15.84000015258789px;
+    left: 191.0800018310547px;
+    top: 745.5199890136719px;
+    border-radius: 0px;
+}
+
+
+#instagram-logo{
+    position: absolute;
+    
+    height: 14.953536987304688px;
+    width: 14.953536987304688px;
+    left: 242.52322387695312px;
+    top: 744.5232543945312px;
+    border-radius: 0px;
+}
+
+
+/* ------------------------------------------------------------------------ */
+
+/* Right Half */
+#righthalf{
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+
+#searchbar{
+    position: absolute;
+    width: 263px;
+    height: 48px;
+    left: 812px;
+    top: 32px;
+    border-radius: 25px;
+    background-color: rgba(50.2%, 50.2%, 50.2%, 0.5);
+}
+
+
+#search-icon{
+    position: absolute;
+    border-radius: 0px;
+    height: 17px;
+    width: 17px;
+    
+    right: 630px;
+    top: 45px;
+}
+
+#cart{
+    position: absolute;
+    width: 53px;
+    height: 24px;
+    left: 1157px;
+    top: 44px;
+}
+
+#cart-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 1157px;
+    top: 44px;
+}
+
+#count{
+    position: absolute;
+    height: 18px;
+    left: 1200px;
+    top: 48px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 150% */
+    
+    text-align: center;
+    
+    color: #19202C;
+}
+
+#hamburger{
+    position: absolute;
+    width: 24px;
+    height: 18.86px;
+    left: 1245px;
+    top: 46.57px;
+}
+
+#man{
+    position: absolute;
+    height: 17px;
+    right: 850px;
+    top: 90px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    
+    color: #19202C;
+}
+
+#arrow1{
+    position: absolute;
+    right: 830px;
+    top: 88px;
+}
+
+#shoes{
+    position: absolute;
+    height: 17px;
+    right: 790px;
+    top: 90px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #19202C;
+}
+
+#arrow2{
+    position: absolute;
+    right: 770px;
+    top: 88px;
+}
+
+#grayshoes{
+    position: absolute;
+    height: 17px;
+    right: 630px;
+    top: 90px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    
+    color: #19202C;
+    opacity: 0.3;
+}
+
+#black-shoe{
+    position: absolute;
+    width: 424px;
+    height: 112px;
+    left: 812px;
+    top: 163px;
+    
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 56px;
+    color: #19202C;
+}
+
+#rating{
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    left: 810px;
+    top: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#stars{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stars{
+    font-size: large;
+    color: #FFB632;
+    margin: 0;
+}
+
+#votes p{
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin: 0px;
+}
+
+#price{
+    position: absolute;
+    height: 42px;
+    left: 810px;
+    top: 330px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 42px;    
+    color: #19202C;
+    
+}
+
+#strike{
+    position: absolute;
+    height: 30px;
+    left: 980px;
+    top: 350px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration-line: line-through;
+    color: #19202C;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+#product-description{
+    position: absolute;
+    width: 458px;
+    height: 48px;
+    left: 812px;
+    top: 391px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #19202C;    
+}
+
+#colorwrap{
+    position: absolute;
+    width: 108px;
+    height: 65px;
+    left: 812px;
+    top: 464px;
+}
+
+#colors{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 0.5px solid gray;
+    opacity: 0.7;
+}
+
+#color-label{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #19202C;
+    text-align: center;
+}
+
+.circles{
+    height: 24px;
+    width: 24px;
+    left: 10px;
+    top: 32px;
+    border-radius: 12px;
+    border: 0.5px solid black;
+}
+
+.circles:nth-child(1){
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.circles:nth-child(2){
+    background: #F3F3F3;
+}
+
+.circles:nth-child(3){
+    background: #7A3050;
+}
+
+#sizewrap{
+    position: absolute;
+    width: 108px;
+    height: 65px;
+    left: 950px;
+    top: 464px;
+}
+
+#size-label{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #19202C;
+    text-align: center;
+}
+
+#dropdown{
+    text-align: center;
+}
+
+#dropdown select{
+    border-radius: 21px;
+    width: 100px;
+    height: 30px;
+}
+
+#qtywrap{
+    position: absolute;
+    width: 108px;
+    height: 65px;
+    left: 1088px;
+    top: 464px;
+}
+
+#qty-label{
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-align: center;    
+}
+
+#quantity{
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 0.5px solid black;
+}
+
+#addtocart{
+    position: absolute;
+    width: 241px;
+    height: 56px;
+    left: 813px;
+    top: 579px;
+    
+    background: #3F88EB;
+    border-radius: 100px;
+    color: white;
+}
+
+#addtocartlogo{
+    position: absolute;
+    height: 14.465468406677246px;
+    width: 18px;
+    left: 869px;
+    top: 597px;
+    border-radius: 0px;
+}
+
+#like-btn{
+    position: absolute;
+    height: 12.800000190734863px;
+    width: 16.66666603088379px;
+    left: 1085.6666870117188px;
+    top: 602.5999755859375px;
+    border-radius: 0px;
+}
+
+#save{
+    position: absolute;
+    height: 19px;
+    width: 113px;
+    left: 1114px;
+    top: 582px;
+}
+
+#delivery{
+    position: absolute;
+    height: 17px;
+    width: 450px;
+    left: 812px;
+    top: 667px;
+    border-radius: nullpx;    
+}

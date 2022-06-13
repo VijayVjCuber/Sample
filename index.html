@@ -10,17 +10,91 @@
 <body>
     <section id="wrapper">
         <div id="lefthalf">
+            <div id="product-img"></div>
             <header>
                 <h1 id="heading">MIKE</h1>
             </header>
             <footer>
-                <img src=".\Web\Facebook.svg" alt="Facebook">
-                <img src=".\Web\Twitter.svg" alt="Twitter">
-                <img src=".\Web\Instagram.svg" alt="Instagram">
+                <div id="fb-wrap">
+                    <div id="facebook"></div>
+                    <img src=".\Web\Facebook.svg" alt="Facebook" id="facebook-logo">
+                </div>
+                <div id="ttwrap">
+                    <div id="twitter"></div>
+                    <img src=".\Web\Twitter.svg" alt="Twitter" id="twitter-logo">
+                </div>
+                <div id="iswrap">
+                    <div id="instagram" ></div>
+                    <img src=".\Web\Instagram.svg" alt="Instagram" id="instagram-logo">
+                </div>
             </footer>
         </div>
-        <div>
-
+        <div id="righthalf">
+            <input type="search" name="searchbar" id="searchbar" placeholder="Search">
+            <img src=".\Web\Search.svg" alt="search-icon" id="search-icon">
+            <img src=".\Web\Cart.svg" alt="cart-icon" id="cart-icon">
+            <div id="count">0</div>
+            <img src=".\Web\MenuHamburger.svg" alt="hamburgerMenu" id="hamburger">
+            <div id="product-path">
+                <p id="man">Man</p>
+                <p id="arrow1">&#9658;</p>
+                <p id="shoes">Shoes</p>
+                <p id="arrow2">&#9658;</p>
+                <p id="grayshoes">Gray Running Sneakers</p>
+            </div>
+            <h1 id="black-shoe">Black Running Sneakers</h1>
+            <div id="rating">
+                <div id="stars">
+                    <p id="star0" class="stars">&#9733;</p>
+                    <p id="star1" class="stars">&#9733;</p>
+                    <p id="star2" class="stars">&#9733;</p>
+                    <p id="star3" class="stars">&#9733;</p>
+                    <p id="star4" class="stars">&#9734;</p>
+                </div>
+                <div id="votes">
+                    <p>18 votes</p>
+                </div>
+            </div>
+            <h2 id="price">₹16,959.99</h2>
+            <h2 id="strike">₹20,069.99</h2>
+            <p id="product-description">Neoprene and membrane boots. Rubber insert with lacing over foot and back on heel. Lining and insole of the membrane</p>
+            <div id="colorwrap">
+                <div id="color-label">
+                    <p>COLOR</p>
+                </div>
+                <div id="colors">
+                    <span name="color" class="circles">&#10004</span>
+                    <span name="color" class="circles"></span>
+                    <span name="color" class="circles"></span>
+                </div>
+            </div>
+            <div id="sizewrap">
+                <div id="size-label">
+                    <p>SIZE</p>
+                </div>
+                <div id="dropdown">
+                    <select name="size" id="size">
+                        <option value="46">46</option>
+                        <option value="48" selected>48</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+            </div>
+            <div id="qtywrap">
+                <div id="qty-label">
+                    <p>QUANTITY</p>
+                </div>
+                <div id="quantity">
+                    <span>-</span>
+                    <p>3</p>
+                    <span>+</span>
+                </div>
+            </div>
+            <button id="addtocart">Add To Cart.</button>
+            <img src=".\Web\AddToCart.svg" alt="addtocartbtn" id="addtocartlogo">
+            <img src=".\Web\Like.svg" alt="likebtn" id="like-btn">
+            <p id="save">Save to Wishlist</p>
+            <p id="delivery">Standard delivery in 2-4 days or Premium delivery in 2-4 hours</p>
         </div>
     </section>
 </body>
