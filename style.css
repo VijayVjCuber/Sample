@@ -1,530 +1,444 @@
-/* ----------------------------------------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* Application Changes */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of reset stylesheet */
+
+/* Start of Left Half */
+#main-wrap{
+    display: flex;
+}
+
 #lefthalf{
-    height: 800px;
-    width: 490px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-    
-
-    position: absolute;
-    left: 0%;
-    right: 65%;
-    top: 0%;
-    bottom: 0%;
-
+    width: 45vw;
+    height: 100vh;
     background: linear-gradient(225.63deg, #37445B -17.16%, #19202C 79.72%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #heading{
-    position: absolute;
-    width: 175px;
-    height: 81px;
-    left: 121px;
-    top: 15px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
 
+#mike{
     font-family: 'SF UI Text';
     font-style: normal;
     font-weight: 700;
     font-size: 67.8095px;
     line-height: 81px;
-
-    display: flex;
-    align-items: center;
-
     color: #FFFFFF;
 }
 
-#product-img{
-    height: 535px;
-    width: 622.9999389648438px;
-    left: 115px;
-    top: 124px;
-    border-radius: 0px;
-
-    position: absolute;
-    left: 8.21%;
-    right: 47.29%;
-    top: 15.5%;
-    bottom: 17.62%;
-    
-    background: url(./Web/ShoeLarge.png);
+#contact{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 15px;
 }
 
-#fb-wrap{
-    height: 36px;
-    width: 36px;
-    left: 130px;
-    top: 734px;
-    border-radius: 0px;
+#contact-logos{
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
 }
 
-#facebook{
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    left: 130px;
-    top: 734px;
-
-    mix-blend-mode: normal;
-    opacity: 0.1;
-    background: #FFFFFF;
-    border-radius: 25px;
+.logo-wrap{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#tt-wrap{
-    height: 36px;
-    width: 36px;
-    left: 181px;
-    top: 734px;
-    border-radius: 0px;
-}
-
-#twitter{
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    left: 181px;
-    top: 734px;
-
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.1;
-    border-radius: 25px;
-}
-#is-wrap{
-    height: 36px;
-    width: 36px;
-    left: 232px;
-    top: 734px;
-    border-radius: 0px;
-}
-
-#instagram{
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    left: 232px;
-    top: 734px;
-    
-    mix-blend-mode: normal;
-    opacity: 0.1;
-    background: #FFFFFF;
-    border-radius: 25px;
-}
-
-
-/* Logos */
-
-#facebook-logo{
-    position: absolute;
-    opacity: 0.5;    
-
+#fb{
     height: 15.84000015258789px;
-    width: 7.920000076293945px;
-    left: 143.67999267578125px;
-    top: 744.0799865722656px;
-    border-radius: 0px;
-
+    width: 7.920000076293945px; 
 }
 
-#twitter-logo{
-    position: absolute;    
-    opacity: 0.5;
+#tt{
     height: 12.960000038146973px;
     width: 15.84000015258789px;
-    left: 191.0800018310547px;
-    top: 745.5199890136719px;
-    border-radius: 0px;
 }
 
+#insta{
+    height: 18.719999313354492px;
+    width: 18.719999313354492px;
+}
 
-#instagram-logo{
+/* End of Left Half */
+/* ------------------------- */
+
+/* Product Image */
+#shoeimg{
     position: absolute;
-    
-    height: 14.953536987304688px;
-    width: 14.953536987304688px;
-    left: 242.52322387695312px;
-    top: 744.5232543945312px;
-    border-radius: 0px;
+    height: 370px;
+    width: 500px;
+    left: 90px;
+    top: 100px;
 }
 
+/* -------------------------------------------------------------- */
+/* Right half start */
 
-/* ------------------------------------------------------------------------ */
-
-/* Right Half */
 #righthalf{
-    height: 100vh;
-    width: 100vw;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
 }
 
-#searchbar{
-    position: absolute;
+#wholewrap{
+    width: 48%;
+}
+
+#topwrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchbox{
+    height: 40px;
     width: 263px;
-    height: 48px;
-    left: 812px;
-    top: 32px;
-    border-radius: 25px;
-    background-color: rgba(50.2%, 50.2%, 50.2%, 0.5);
+    border-radius: 24px;
+    border: 0;
+    background-color: rgba(0,0,0,0.1);
 }
 
-
-#search-icon{
-    position: absolute;
-    border-radius: 0px;
-    height: 17px;
-    width: 17px;
-    
-    right: 630px;
-    top: 45px;
+#searchicon{
+    position: relative;
+    right: 35px;
 }
 
-#cart{
-    position: absolute;
-    width: 53px;
-    height: 24px;
-    left: 1157px;
-    top: 44px;
+#cartwrap{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
 }
 
 #cart-icon{
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 1157px;
-    top: 44px;
+    height: 19.28729248046875px;
+    width: 24px;   
+}
+
+#countwrap{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #count{
-    position: absolute;
     height: 18px;
-    left: 1200px;
-    top: 48px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height, or 150% */
-    
-    text-align: center;
-    
-    color: #19202C;
+    width: 7px;  
 }
 
+/* hamburger menu */
 #hamburger{
-    position: absolute;
+    height: 18.85714340209961px;
     width: 24px;
-    height: 18.86px;
-    left: 1245px;
-    top: 46.57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#man{
-    position: absolute;
-    height: 17px;
-    right: 850px;
-    top: 90px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
+.bars{
+    height: 3.327731132507324px;
+    width: 24px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#secondline{
+    margin: 15px 0px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-path{
     font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-    
-    
-    color: #19202C;
 }
 
-#arrow1{
-    position: absolute;
-    right: 830px;
-    top: 88px;
+.product-path:last-child{
+    color: rgba(50.2%, 50.2%, 50.2%, 0.9);
 }
 
-#shoes{
-    position: absolute;
-    height: 17px;
-    right: 790px;
-    top: 90px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    
-    color: #19202C;
+.product-arrow{
+    font-size: 8px;
 }
 
-#arrow2{
-    position: absolute;
-    right: 770px;
-    top: 88px;
+#product-wrap{
+    height: 100px;
+    width: 80%;
 }
 
-#grayshoes{
-    position: absolute;
-    height: 17px;
-    right: 630px;
-    top: 90px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    
-    
-    color: #19202C;
-    opacity: 0.3;
-}
-
-#black-shoe{
-    position: absolute;
-    width: 424px;
-    height: 112px;
-    left: 812px;
-    top: 163px;
-    
+#product{
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 900;
     font-size: 50px;
     line-height: 56px;
-    color: #19202C;
 }
 
-#rating{
-    position: absolute;
-    width: 150px;
-    height: 20px;
-    left: 810px;
-    top: 320px;
+#review{
+    margin: 15px 0px;
+    width: 33%;
     display: flex;
     justify-content: space-between;
 }
 
-#stars{
+.star{
+    color: #FFB632;
+}
+
+#vote{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;    
+    text-decoration-line: underline;
+    color: #3F88EB;
+}
+
+#price-wrap{
+    width: 45%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-.stars{
-    font-size: large;
-    color: #FFB632;
-    margin: 0;
-}
-
-#votes p{
-    color: blue;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    margin: 0px;
-}
-
-#price{
-    position: absolute;
-    height: 42px;
-    left: 810px;
-    top: 330px;
-    
+#discountprice{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
-    line-height: 42px;    
-    color: #19202C;
-    
+    line-height: 42px;
 }
 
-#strike{
-    position: absolute;
-    height: 30px;
-    left: 980px;
-    top: 350px;
-    
+#originalprice{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     text-decoration-line: line-through;
-    color: #19202C;
-    mix-blend-mode: normal;
     opacity: 0.3;
+    margin-left: 20px;    
 }
 
-#product-description{
-    position: absolute;
-    width: 458px;
-    height: 48px;
-    left: 812px;
-    top: 391px;
-    
+#description-wrap{
+    margin: 15px 0px;
+}
+
+#description{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #19202C;    
 }
 
-#colorwrap{
-    position: absolute;
-    width: 108px;
-    height: 65px;
-    left: 812px;
-    top: 464px;
-}
-
-#colors{
+#order-wrap{
+    width: 80%;
     display: flex;
-    justify-content: space-around;
-    border-radius: 20px;
-    border: 0.5px solid gray;
-    opacity: 0.7;
+    justify-content: space-between;
 }
 
-#color-label{
+#color-wrap{
+    height: 45px;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#color-text p{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #19202C;
-    text-align: center;
 }
 
-.circles{
-    height: 24px;
-    width: 24px;
-    left: 10px;
-    top: 32px;
-    border-radius: 12px;
-    border: 0.5px solid black;
+#colors{
+    margin-top: 5px;
+    width: 60px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EDEDED;
+    border-radius: 20px;
 }
 
-.circles:nth-child(1){
+
+.color{
+    height: 18px;
+    width: 18px;
+    border-radius: 20px;
+}
+
+.color:first-child{
     background-color: black;
     color: white;
     text-align: center;
 }
 
-.circles:nth-child(2){
+.color:nth-child(2){
     background: #F3F3F3;
 }
 
-.circles:nth-child(3){
+.color:nth-child(3){
     background: #7A3050;
 }
 
-#sizewrap{
-    position: absolute;
-    width: 108px;
-    height: 65px;
-    left: 950px;
-    top: 464px;
+#size-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#size-label{
+#sizeselectwrap{
+    margin-top: 5px;
+}
+
+#sizeselect{
+    border: 1px solid #EDEDED;
+    border-radius: 20px;
+    width: 60px;
+    height: 25px;
+}
+
+#size-text p{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #19202C;
-    text-align: center;
 }
 
-#dropdown{
-    text-align: center;
-}
-
-#dropdown select{
-    border-radius: 21px;
-    width: 100px;
-    height: 30px;
-}
-
-#qtywrap{
-    position: absolute;
-    width: 108px;
-    height: 65px;
-    left: 1088px;
-    top: 464px;
-}
-
-#qty-label{
-    font-family: Lato;
-    font-size: 12px;
+#qty-text p{
+    font-family: 'Lato';
+    font-style: normal;
     font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0px;
-    text-align: left;
-    text-align: center;    
+    font-size: 12px;
+    line-height: 14px;    
 }
 
-#quantity{
-    height: 27px;
+#qtyselectwrap{
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    border: 1px solid #F1F1F1;
     border-radius: 20px;
-    border: 0.5px solid black;
+    height: 25px;
+    margin-top: 5px;
+}
+
+#cart-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 20px 0;
 }
 
 #addtocart{
-    position: absolute;
-    width: 241px;
-    height: 56px;
-    left: 813px;
-    top: 579px;
-    
+    height: 50px;
+    width: 210px;   
+
     background: #3F88EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 100px;
-    color: white;
 }
 
-#addtocartlogo{
-    position: absolute;
+#carticon{
     height: 14.465468406677246px;
     width: 18px;
-    left: 869px;
-    top: 597px;
-    border-radius: 0px;
+    margin-right: 10px;
 }
 
-#like-btn{
-    position: absolute;
+#addtocart p{
+    color: #FFFFFF;
+}
+
+#savetowishlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#likeicon{
     height: 12.800000190734863px;
     width: 16.66666603088379px;
-    left: 1085.6666870117188px;
-    top: 602.5999755859375px;
-    border-radius: 0px;
+    margin-right: 10px;    
 }
 
-#save{
-    position: absolute;
-    height: 19px;
-    width: 113px;
-    left: 1114px;
-    top: 582px;
-}
-
-#delivery{
-    position: absolute;
-    height: 17px;
-    width: 450px;
-    left: 812px;
-    top: 667px;
-    border-radius: nullpx;    
+#savetowishlist p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;    
 }
