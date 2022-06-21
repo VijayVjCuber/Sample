@@ -48,6 +48,7 @@ table {
 }
 
 /* End of reset stylesheet */
+/* --------------------------------------------------------------------------------- */
 
 /* Start of Left Half */
 #main-wrap{
@@ -160,13 +161,17 @@ table {
 
 #searchicon{
     position: relative;
+    height: 17px;
+    width: 17px;
     right: 35px;
 }
 
 #cartwrap{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 50px;
+    margin-right: 20px;
 }
 
 #cart-icon{
@@ -441,4 +446,134 @@ table {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;    
+}
+
+@media only screen and (max-width: 850px) {
+    #fb{
+        content: url("./Mobile/Facebook.svg");
+        height: 15.84000015258789px;
+        width: 7.920000076293945px;
+    }
+
+    #tt{
+        content: url("./Mobile/Twitter.svg");
+        height: 12.960000038146973px;
+        width: 15.84000015258789px;
+    }
+
+    #insta{
+        content: url("./Mobile/Instagram.svg");
+        height: 14.953536987304688px;
+        width: 14.953536987304688px;
+    }
+
+    #shoeimg{
+        top: 220px;
+        content: url("./Mobile/ShoeSmall.png");
+        height: 177.47341918945312px;
+        width: 195.7726593017578px;       
+    }
+
+    
+
+    #cart-wrap{
+        padding-right: 15px;
+    }
+
+    #cart-icon{
+        height: 13.661831855773926px;
+        width: 17px;
+    }
+
+    #carticon{
+        content: url("./Mobile/AddToCart.svg");
+        height: 11.107413291931152px;
+        width: 13.821428298950195px;
+    }
+
+    #likeicon{
+        content: url("./Mobile/Like.svg");
+        height: 9.828571319580078px;
+        width: 12.797618865966797px;
+    }
+
+    #main-wrap{
+        flex-direction: column;
+    }
+
+    #lefthalf{
+        width: 100%;
+        height: 20vh;
+    }
+
+    #heading{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #mike{
+        height: 29px;
+        width: 62px;
+        font-family: 'SF UI Text';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 15px;
+    }
+
+    #contact{
+        position: absolute;
+        top: 813px;
+        border-radius: 0px;        
+    }
+
+    .logo-wrap{
+        background-color: #D3D3D3;
+    }
+
+    #topwrap{
+        position: absolute;
+        top: 70px;
+        width: 90%;
+        display: flex;
+        justify-content: end;
+    }
+
+    #searchbox{
+        display: none;
+    }
+
+    #wholewrap{
+        width: 90%;
+    }
+
+    #secondline p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    #product{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        line-height: 36px;
+    }
+
+    #review{
+        margin-top: 130px;
+    }
+
+    #description-wrap{
+        margin: 20px 0px;
+    }
+
+    #disclaimer{
+        margin-top: 50px;
+    }
+
 }
